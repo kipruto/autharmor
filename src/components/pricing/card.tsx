@@ -20,7 +20,7 @@ export default function PricingCard({
 }) {
   return (
     <div
-      className={`flex flex-col bg-gray-50  rounded-lg  self-center ${
+      className={`flex flex-col bg-gray-50  rounded-lg  self-center mt-10 md:mt-0 ${
         isActive
           ? "md:min-w-[450px] border-2 border-primary-500 dark:border-primary_light dark:bg-primary-500"
           : "md:min-w-[350px] drop-shadow-lg dark:bg-primary_dark"

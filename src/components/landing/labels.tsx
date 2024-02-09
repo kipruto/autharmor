@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Labels() {
   return (
-    <div className="flex justify-center py-4">
+    <div className="flex flex-col md:flex-row items-center space-y-3 justify-center mt-10 py-20">
       <div className="py-1 px-4 border border-primary-700 dark:border-primary-50  rounded-3xl bg-primary-50 flex items-center">
         <div className="w-2.5 h-2.5 mr-2 bg-primary-400 rounded-md" />
         <p className="text-primary-900 text-sm">

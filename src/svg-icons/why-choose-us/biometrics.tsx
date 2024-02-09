@@ -1,6 +1,7 @@
 export default function BiometricsIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+    className="w-[135] h-[149]"
       width="135"
       height="149"
       viewBox="0 0 135 149"

@@ -16,7 +16,7 @@ const StyledContainer = styled("div").withConfig({
   backgroundPosition: "center",
   backgroundSize: "cover",
   ...(dark && {
-    backgroundImage: `url(assets/images/backgrounds/landing-dark.png)`,
+    backgroundColor: "#1a202c",
   }),
 }));
 
@@ -26,16 +26,15 @@ const Landing = () => {
 
   return (
     <StyledContainer dark={isDarkMode}>
-      <div className="container mx-auto min-h-screen flex flex-col justify-center">
+      <div className="container mx-auto flex flex-col md:min-h-screen px-10 ">
         <Navbar />
 
         <Labels />
 
-        <div className="sm:h-12 md:h-20" />
-
         <TopSection />
 
         <div className="sm:h-12 md:h-20" />
+        <div className="border-t border-gray-400 dark:border-t-gray-700 "></div>
       </div>
     </StyledContainer>
   );

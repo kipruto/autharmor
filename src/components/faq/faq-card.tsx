@@ -40,7 +40,7 @@ export default function FaqCard(
 
   return (
     <motion.div
-      className="py-6 px-8 mb-4 border dark:border-slate-500 rounded-md"
+      className="py-4 md:py-6 px-8 mb-4 border dark:border-slate-500 rounded-md "
       variants={containerVariants(isDarkMode)}
       {...animateProps}
     >
@@ -63,7 +63,7 @@ export default function FaqCard(
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
           >
-            <p className="font-sans font-regular text-small text-gray-600 dark:text-slate-300">
+            <p className="font-sans font-regular text-sm md:text-base text-gray-600 dark:text-slate-300">
               {props.description}
             </p>
           </motion.div>

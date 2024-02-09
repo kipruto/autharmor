@@ -28,8 +28,9 @@ export default function Subscribe({
         Newsletter
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center rounded-lg bg-white py-2 pr-2 pl-3 mt-10 font-poppins font-regular">
+      <div className="flex flex-col md:flex-row md:items-center rounded-lg bg-white py-2 pr-2 pl-3 mt-10 font-regular">
         <svg
+        className="hidden md:block"
           width="19"
           height="16"
           viewBox="0 0 19 16"
@@ -52,7 +53,7 @@ export default function Subscribe({
         </svg>
 
         <input
-          className="w-full sm:w-96  px-2 py-2 text-gray-400 outline-none focus:outline-none font-regular mb-6 sm:mb-0 font-regular"
+          className="w-full sm:w-96 border md:border-none px-2 py-2 text-gray-400 outline-none focus:outline-none font-regular mb-2 md:mb-6 sm:mb-0 font-regular"
           type="search"
           name="search"
           placeholder="Enter your mail"

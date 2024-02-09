@@ -22,6 +22,9 @@ const config: Config = {
 
         primary_light: "#09C0B8",
         primary_dark: "#1B2E2F",
+        bg_dark: "#1a202c",
+        bg_darker: "#171923",
+        bg_btn: "#81E6D9",
         secondary: {
           500: "#0A1F34",
         },

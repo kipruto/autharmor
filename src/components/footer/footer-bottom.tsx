@@ -22,8 +22,8 @@ export default function FooterBottom({ height }: { height: number }) {
         </div>
 
         <div className="container mx-auto max-w-[1200px] flex pt-8 mt-8 px-4 font-poppins text-xs md:text-sm text-slate-300 border-t">
-          <p className="">
-            Copyright, AuthArmor 2022. All rights reserved.
+          <p className="flex items-center">
+          &#169; AuthArmor LLC, 2024. All rights reserved.
           </p>
           <div className="grow"></div>
 

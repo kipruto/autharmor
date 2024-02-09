@@ -18,13 +18,13 @@ export default function AuthenticationMethods() {
 
   return (
     <div
-      className="py-10 lg:py-32"
+      className="p-10 "
       style={{
         ...(isDarkMode && {
-          backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPositionY: "center",
+          backgroundColor: "#1a202c",
         }),
       }}
     >
@@ -32,18 +32,18 @@ export default function AuthenticationMethods() {
         <div className="text-center font-sans font-semibold">
           <SectionHead
             title={
-              <>
-                Authentication Tools out of the box <br />
-                <span className="text-5xl text-primary-500 dark:text-primary_light">
+              <h1 className="text-4xl md:text-5xl ">
+                Authentication Tools out of the box <br/>
+                <span className="text-3xl md:text-5xl text-primary-500 dark:text-primary_light">
                   Easy to Use, Easy to Deploy.
                 </span>
-              </>
+              </h1>
             }
-            description="Several simple authentication methods to suit your needs"
+            description={<h3 className="text-sm md:text-md">Several simple authentication methods to suit your needs</h3>}
           />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3  gap-8 mt-10 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3  gap-8 mt-14 px-4 md:max-w-7xl mx-auto">
           {ITEMS.map((item) => {
             const backgroundImage = `url(${item.bg[mode].src})`;
 
@@ -58,11 +58,11 @@ export default function AuthenticationMethods() {
                 suppressHydrationWarning
                 key={item.title}
               >
-                <p className="sm:text-2xl lg:text-4xl font-sans font-semibold text-white">
+                <p className="text-2xl md:text-3xl font-sans font-semibold text-white">
                   {item.title}
                 </p>
 
-                <p className="mt-10 font-sans font-regular text-gray-100 text-lg">
+                <p className="mt-10 font-sans font-regular text-gray-100 text-md">
                   {item.description}
                 </p>
               </div>

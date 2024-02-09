@@ -17,17 +17,17 @@ export default function Applications() {
 
   return (
     <div
-      className="py-10 lg:pt-32 lg:pb-36"
+      className="p-10 lg:pt-32 lg:pb-36"
       style={{
         ...(isDarkMode && {
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundColor: "#1a202c",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPositionY:"-300px"
         }),
       }}
     >
-      <div className="container container mx-auto">
+      <div className="container mx-auto">
         <SectionHead
           preTitle="APPLICATIONS"
           title={
@@ -62,7 +62,7 @@ export default function Applications() {
           })}
         </div>
 
-        <div className="grid gap-8 grid-cols-12 justify-center items-center mt-14">
+        <div className="grid gap-8 grid-cols-12 justify-center items-center mt-14 ">
           <div className="sm:col-span-12 lg:col-span-6 flex items-center justify-center">
             <Image
               src={saasApplication}
@@ -72,12 +72,12 @@ export default function Applications() {
             />
           </div>
 
-          <div className="sm:col-span-12 lg:col-span-6 px-4">
+          <div className=" md:w-2/3 p-0 md:px-4">
             <p className="font-semibold font-sans text-4xl my-10 dark:text-gray-200">
               {APPLICATION_ITEMS[active].title}
             </p>
 
-            <div className="text-gray-500  dark:text-gray-300">
+            <div className="text-gray-500  dark:text-gray-300 w-svw ">
               <p className="mb-3">
                 Make your SaaS platform more secure and improve compliance with
                 privacy and data protection requirements. Give your clients

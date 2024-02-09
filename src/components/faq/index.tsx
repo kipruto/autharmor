@@ -19,23 +19,24 @@ export default function Faq() {
   );
 
   return (
-    <div className="container mx-auto pt-32 pb-60">
+    <div className="container mx-auto px-10 pt-32 pb-20 md:pb-60 ">
       <SectionHead
         title={
-          <>
+          <h1 className="text-4xl md:text-5xl ">
             Frequently Asked{" "}
             <span className="text-primary-500 dark:text-primary_light">
               Questions
             </span>
-          </>
+            </h1>
         }
-        description="We got some your questions answered."
+        description={<h3 className="text-sm md:text-md">We got some your questions answered</h3>
+      }
       />
 
       <div className="h-28"></div>
 
-      <div className="flex sm:flex-col lg:flex-row px-2">
-        <div className="flex-1 lg:pr-4">
+      <div className="flex flex-col lg:flex-row px-2">
+        <div className="flex-1 mb-10 md:mb-0 lg:pr-4">
           {FAQ_ITEMS.map((item, index) => (
             <FaqCard
               key={index}

@@ -19,10 +19,10 @@ export default function RootLayout({
   const theme = (cookieStore.get("theme")?.value || "light") as
     | "light"
     | "dark";
-    
+
   return (
     <html lang="en" className={theme}>
-      <body className={"font-sans dark:bg-dark dark:text-slate-200"}>
+      <body className={"font-sans dark:bg-dark dark:text-slate-200 flex flex-col w-full sm:w-full mx-auto"}>
         <DarkModeProvider mode={theme}>
           <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </DarkModeProvider>

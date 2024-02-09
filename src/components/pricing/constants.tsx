@@ -3,7 +3,7 @@ export const HEADER_SECTION_HEIGHT = 150;
 export const VIRTUAL_CONTAINER_HEIGHT =
   HEADER_SECTION_HEIGHT + HEADER_POPULAR_HEIGHT * 1.5;
 
-export const PRICING_TABS = ["Workforce", "Customers"];
+
 
 export const PRICING_OPTIONS = [
   {
