@@ -78,7 +78,7 @@ const Navbar = () => {
 
 <button
           onClick={toggleNavbar}
-          className="text-white bg-gray-700 focus:outline-none focus:bg-gray-500  rounded flex items-center justify-center px-3 py-2 md:hidden "
+          className="text-gray-700 bg-white border border-gray-400 dark:bg-gray-900 focus:outline-none focus:bg-gray-500  rounded flex items-center justify-center px-3 py-2 md:hidden "
         >
           <FontAwesomeIcon icon={ faBars }
             className={`text-${isDarkMode ? 'white' : 'gray'} `}
@@ -107,12 +107,22 @@ const Navbar = () => {
                   <Link
                     key={config.name}
                     href={config.path}
-                    className="text-gray-900 dark:text-gray-100 hover:bg-gray-700 mx-3 px-3 text-md py-4 border-b rounded"
+                    className="text-white dark:text-gray-100 hover:bg-gray-700 mx-3 px-3 text-md py-4 border-b rounded"
                   >
                     {config.name}
                   </Link>
                 );
               })}
+
+<div className="flex flex-col space-y-2 mt-2 md:hidden">
+      <a href="#" className="hover:text-gray-300 text-white font-bold py-2 px-4 rounded-full focus:outline-none no-underline">
+  Login
+</a>
+<a href="#" className="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:bg-primary-600">
+  Sign Up
+</a>
+
+      </div>
               <button
               onClick={toggle}
               className="bg-gray-200 dark:bg-gray-500 rounded-full w-8 h-8 flex items-center justify-center p-1 focus:outline-none ml-5 mt-10"
