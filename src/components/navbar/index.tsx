@@ -66,7 +66,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className="hidden md:flex">
-      <a href="#" className="hover:text-gray-300 text-white font-bold py-2 px-4 rounded-full focus:outline-none no-underline">
+      <a href="#" className="hover:text-gray-300 text-gray-900 dark:text-white font-bold py-2 px-4 rounded-full focus:outline-none no-underline">
   Login
 </a>
 <a href="#" className="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:bg-primary-600">
