@@ -10,6 +10,23 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 75%; /* Adjust width to cover 3/4 of the screen */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.sidebar-closed {
+ display: none;
+}
+
+.sidebar-open {
+  transform: translateX(-20%);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

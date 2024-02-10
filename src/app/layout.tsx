@@ -22,7 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={theme}>
-      <body className={"font-sans dark:bg-dark dark:text-slate-200 flex flex-col w-full sm:w-full mx-auto"}>
+      <body className={"font-sans dark:bg-dark dark:text-slate-200 flex flex-col w-full sm:w-full mx-auto "}>
         <DarkModeProvider mode={theme}>
           <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </DarkModeProvider>

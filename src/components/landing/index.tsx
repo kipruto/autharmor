@@ -34,7 +34,7 @@ const Landing = () => {
         <TopSection />
 
         <div className="sm:h-12 md:h-20" />
-        <div className="border-t border-gray-400 dark:border-t-gray-700 "></div>
+        <div className="mt-20 md:mt-44 border-t border-gray-400 dark:border-t-gray-700 "></div>
       </div>
     </StyledContainer>
   );

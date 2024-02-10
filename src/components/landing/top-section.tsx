@@ -13,10 +13,7 @@ export default function TopSection() {
 
 			<div className='mt-12 text-sm md:text-xl text-gray-700 dark:text-gray-300'>
 				<p className='font-regular '>
-					Signing in without a password is faster, safer and easier.
-				</p>
-				<p className='font-regular '>
-					With Auth Armor, give your users a glimpse into the future.
+					Signing in without a password is faster, safer and easier. With Auth Armor, <br/> you can give your users a glimpse into the future.
 				</p>
 			</div>
 

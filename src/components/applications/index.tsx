@@ -62,7 +62,7 @@ export default function Applications() {
           })}
         </div>
 
-        <div className="grid gap-8 grid-cols-12 justify-center items-center mt-14 ">
+        <div className="grid gap-8 grid-cols-12 justify-center items-center mt-14 overflow-hidden">
           <div className="sm:col-span-12 lg:col-span-6 flex items-center justify-center">
             <Image
               src={saasApplication}
@@ -77,7 +77,7 @@ export default function Applications() {
               {APPLICATION_ITEMS[active].title}
             </p>
 
-            <div className="text-gray-500  dark:text-gray-300 w-svw ">
+            <div className="text-gray-500  dark:text-gray-300 w-svw md:w-[45vw] lg:w-[28vw] flex flex-wrap">
               <p className="mb-3">
                 Make your SaaS platform more secure and improve compliance with
                 privacy and data protection requirements. Give your clients

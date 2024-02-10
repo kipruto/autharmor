@@ -9,7 +9,7 @@ import Footer from "components/footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full dark:bg-bg_darker">
+    <main className="flex flex-col w-full dark:bg-bg_darker overflow-x-hidden">
       <Landing />
 
       <AuthenticationMethods />
