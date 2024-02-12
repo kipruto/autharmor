@@ -23,7 +23,7 @@ export default function Applications() {
           backgroundColor: "#1a202c",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPositionY:"-300px"
+          backgroundPositionY: "-300px"
         }),
       }}
     >
@@ -41,18 +41,17 @@ export default function Applications() {
           description="Level up your user experience. Whatever your industry"
         />
 
-        <div className="flex flex-full  justify-center mt-16">
+        <div className="flex flex-full justify-center mt-16 overflow-x-auto ">
           {APPLICATION_ITEMS.map((item, index) => {
             const isActive = active === index;
 
             return (
               <div
                 key={item.title}
-                className={`py-3 px-5 text-gray-400 flex flex-col justify-between cursor-pointer font-sans font-semibold ${
-                  isActive
+                className={` flex px-5 text-gray-400 flex-col justify-center items-center cursor-pointer font-sans font-semibold ${isActive
                     ? "text-primary-100 "
                     : "text-gray-600 dark:text-gray-200"
-                }`}
+                  }`}
                 onClick={() => setActive(index)}
               >
                 {item.icon}
@@ -62,27 +61,27 @@ export default function Applications() {
           })}
         </div>
 
-        <div className="grid gap-8 grid-cols-12 justify-center items-center mt-14 overflow-hidden">
-          <div className="sm:col-span-12 lg:col-span-6 flex items-center justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center mt-14 overflow-hidden">
+          <div className="sm:col-span-2 lg:col-span-1 flex items-center justify-center">
             <Image
               src={saasApplication}
               alt=""
               unoptimized
-              className="h-[350px] w-auto"
+              className="h-[300px] w-auto"
             />
           </div>
 
-          <div className=" md:w-2/3 p-0 md:px-4">
-            <p className="font-semibold font-sans text-4xl my-10 dark:text-gray-200">
+          <div className="sm:col-span-2 lg:col-span-1 p-0">
+            <h2 className="font-semibold font-sans text-3xl my-10 dark:text-gray-200">
               {APPLICATION_ITEMS[active].title}
-            </p>
+            </h2>
 
-            <div className="text-gray-500  dark:text-gray-300 w-svw md:w-[45vw] lg:w-[28vw] flex flex-wrap">
+            <div className="text-gray-500 dark:text-gray-300 w-full md:w-[45vw] lg:w-[28vw] flex flex-wrap">
               <p className="mb-3">
-                Make your SaaS platform more secure and improve compliance with
-                privacy and data protection requirements. Give your clients
-                peace of mind their data is protected with industry-leading
-                passkey authentication systems.
+                Make your SaaS platform more secure and improve compliance with privacy
+                and data protection requirements. Give your clients peace of mind their
+                data is protected with industry-leading passkey authentication
+                systems.
               </p>
 
               <p>1. Prevent account take-overs and improve security.</p>
@@ -91,6 +90,7 @@ export default function Applications() {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

@@ -8,11 +8,11 @@ import ShoppingBagIcon from "svg-icons/shopping-bag";
 export const APPLICATION_ITEMS = [
   {
     title: "Ecommerce",
-    icon: <ShoppingBagIcon height={58} width={58} />,
+    icon: <ShoppingBagIcon height={68} width={68} />,
   },
   {
     title: "Saas Platforms",
-    icon: <CloudIcon height={73} width={73} />,
+    icon: <CloudIcon height={68} width={68} />,
   },
   {
     title: "Financial & Banking",

@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link
                 key={config.name}
                 href={config.path}
-                className="text-gray-900 dark:text-gray-100 hover:bg-gray-700 mx-3 px-3 text-md py-2 rounded"
+                className="text-gray-900 dark:text-gray-100 hover:text-primary_light dark:hover:text-primary_light  mx-3 px-3 text-md py-2 rounded"
               >
                 {config.name}
               </Link>
