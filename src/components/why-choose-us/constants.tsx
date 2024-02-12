@@ -3,6 +3,17 @@ import SecureOrgIcon from "svg-icons/why-choose-us/secure-org";
 import ShieldIcon from "svg-icons/why-choose-us/shield";
 import TimerIcon from "svg-icons/why-choose-us/timer";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faEnvelope, faKey, faQrcode , faDollarSign, faTag , faLock, faFingerprint, faUnlockAlt,  faPaperPlane, faMagic,  faMobileAlt  } from '@fortawesome/free-solid-svg-icons';
+import { faJs, faNodeJs, faReact, faMicrosoft, faPython } from '@fortawesome/free-brands-svg-icons';
+
+
+
+
+// QR Code icon
+
+
+
 export const WHY_CHOOSE_US_ITEMS = [
   {
     title: "Multiple passwordless login options",
@@ -11,30 +22,30 @@ export const WHY_CHOOSE_US_ITEMS = [
       <>
         <p>Our Authentication Options Include but not limited to:</p>
 
-        <ul className="list-disc pl-12 mt-4">
+        <ul className="list-none pl-12 mt-4">
           <li>
-            <span className="font-bold">WebAuthn Support:</span> Ensuring robust
+            <span className="font-bold"><FontAwesomeIcon icon={faGlobe} className="text-primary-200 mr-2" /> WebAuthn Support:</span> Ensuring robust
             passwordless authentication.
           </li>
           <li>
-            <span className="font-bold">Magiclink Emails:</span> Seamless login
+            <span className="font-bold"> <FontAwesomeIcon icon={faEnvelope} className="text-primary-200 mr-2" /> Magiclink Emails:</span> Seamless login
             experiences across all devices.
           </li>
           <li>
-            <span className="font-bold">Proprietary Authenticator App: </span>
+            <span className="font-bold"><FontAwesomeIcon icon={faKey} className="text-primary-200 mr-2" /> Proprietary Authenticator App: </span>
             FIDO-backed support for added security.
           </li>
           <li>
-            <span className="font-bold">QR Code Login: </span>
+            <span className="font-bold"> <FontAwesomeIcon icon={faQrcode} className="text-primary-200 mr-2" /> QR Code Login: </span>
             Effortless one-touch login functionality.
           </li>
           <li>
-            <span className="font-bold">Out-of-Band Authentication: </span>
+            <span className="font-bold"><FontAwesomeIcon icon={faLock} className="text-primary-200 mr-2" /> Out-of-Band Authentication: </span>
             Diverse options for enhanced security.
           </li>
 
           <li>
-            <span className="font-bold">Transparent and Fair Pricing: </span>
+            <span className="font-bold"><FontAwesomeIcon icon={faDollarSign} className="text-primary-200 mr-2" /> Transparent and Fair Pricing: </span>
             Clear and equitable cost structures.
           </li>
         </ul>
@@ -65,21 +76,21 @@ export const WHY_CHOOSE_US_ITEMS = [
         user has. You can deliver passkeys that "just work" with no set-up
         required from the user's point of view. We support multiple
         authentication options, including.
-        <ul className="mt-4 pl-12 list-disc">
-          <li>Biometrics: Fingerprint and Face-ID for smartphone users.</li>
+        <ul className="mt-4 pl-12 list-none">
+          <li><FontAwesomeIcon icon={faFingerprint} className="text-primary-200 mr-2" /> Biometrics: Fingerprint and Face-ID for smartphone users.</li>
           <li>
-            PIN Unlock: Backwards-compatible with more basic feature phones or
+          <FontAwesomeIcon icon={faUnlockAlt} className="text-primary-200 mr-2" /> PIN Unlock: Backwards-compatible with more basic feature phones or
             older smartphones.
           </li>
-          <li>Push Messaging: As a second authentication factor.</li>
+          <li><FontAwesomeIcon icon={faPaperPlane} className="text-primary-200 mr-2" /> Push Messaging: As a second authentication factor.</li>
           <li>
-            Magiclink emails: A truly device-agnostic passwordless login option.
+          <FontAwesomeIcon icon={faMagic} className="text-primary-200 mr-2" /> Magiclink emails: A truly device-agnostic passwordless login option.
           </li>
-          <li>
+          <li><FontAwesomeIcon icon={faMobileAlt} className="text-primary-200 mr-2" />
             Authenticators: Support for physical authenticator keys and other
             third-party authenticator options.
           </li>
-          <li>
+          <li> <FontAwesomeIcon icon={faQrcode} className="text-primary-200 mr-2" />
             QR Codes: Authenticate a second device by scanning a QR code on an
             already logged-in device.
           </li>
@@ -105,12 +116,12 @@ export const WHY_CHOOSE_US_ITEMS = [
         using the OAuth 2.0 standard, and we provide detailed developer
         documentation for a variety of languages and frameworks. Support for
         Your Workflow. Get started with our drop-in APIs and SDKs for:
-        <ul className="pl-12 mt-4 list-disc">
-          <li>JavaScript</li>
-          <li>Node.JS</li>
-          <li>React</li>
+        <ul className="pl-12 mt-4 list-none">
+          <li><FontAwesomeIcon icon={faJs} className="text-primary-200 mr-2" /> JavaScript</li>
+          <li><FontAwesomeIcon icon={faNodeJs} className="text-primary-200 mr-2" /> Node.JS</li>
+          <li><FontAwesomeIcon icon={faReact} className="text-primary-200 mr-2" /> React</li>
           <li>.NET</li>
-          <li>Python</li>
+          <li><FontAwesomeIcon icon={faPython} className="text-primary-200 mr-2" /> Python</li>
         </ul>
         <p className="mt-4">
           To get started, simply register for a developer account and create an
