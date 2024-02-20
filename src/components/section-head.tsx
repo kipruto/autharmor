@@ -4,7 +4,7 @@ export default function SectionHead({
   className,
   title,
   description,
-  preTitle
+  preTitle,
 }: SectionHeadProps) {
   const classNames = useMemo(() => {
     const base = "flex flex-col items-center";
@@ -18,12 +18,12 @@ export default function SectionHead({
           {preTitle}
         </p>
       )}
-      <p className="text-5xl font-sans font-semibold text-center dark:text-gray-200">
+      <p className="text-4xl md:text-5xl font-sans font-semibold text-center dark:text-gray-200">
         {title}
       </p>
 
       {!!description && (
-        <p className="mt-4 text-xl max-w-[900px] text-center mx-auto text-slate-700 dark:text-gray-400">
+        <p className="mt-4 text-sm md:text-md max-w-[900px] text-center mx-auto text-slate-700 dark:text-gray-400">
           {description}
         </p>
       )}

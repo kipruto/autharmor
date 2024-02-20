@@ -11,7 +11,6 @@ import image_02_dark from "assets/images/auth-methods/02-dark.png";
 import image_03_dark from "assets/images/auth-methods/03-dark.png";
 import SectionHead from "./section-head";
 
-const backgroundImage = "/assets/images/backgrounds/auth-methods-dark.png";
 
 export default function AuthenticationMethods() {
   const { mode, isDarkMode } = useDarkMode();
@@ -32,14 +31,14 @@ export default function AuthenticationMethods() {
         <div className="text-center font-sans font-semibold">
           <SectionHead
             title={
-              <h1 className="text-4xl md:text-5xl ">
-                Authentication Tools out of the box <br/>
+              <>
+                Authentication Tools out of the box <br />
                 <span className="text-3xl md:text-5xl text-primary-500 dark:text-primary_light">
                   Easy to Use, Easy to Deploy.
                 </span>
-              </h1>
+              </>
             }
-            description={<h3 className="text-sm md:text-md">Several simple authentication methods to suit your needs</h3>}
+            description="Several simple authentication methods to suit your needs"
           />
         </div>
 

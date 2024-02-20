@@ -22,15 +22,14 @@ export default function Faq() {
     <div className="container mx-auto px-10 pt-32 pb-20 md:pb-60 ">
       <SectionHead
         title={
-          <h1 className="text-4xl md:text-5xl ">
+          <>
             Frequently Asked{" "}
             <span className="text-primary-500 dark:text-primary_light">
               Questions
             </span>
-            </h1>
+          </>
         }
-        description={<h3 className="text-sm md:text-md">We got some your questions answered</h3>
-      }
+        description="We got some your questions answered"
       />
 
       <div className="h-28"></div>
