@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
           <div className=" border-t py-20 px-10 md:px-40">
           <div className="flex justify-center">
             <ItemContent center title={WHY_CHOOSE_BTM_ITEM.title}>
-              {WHY_CHOOSE_BTM_ITEM.description}
+              {WHY_CHOOSE_BTM_ITEM.title}
             </ItemContent>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-24 mt-12 mb-12">
@@ -88,7 +88,9 @@ export default function WhyChooseUs() {
               >
                 <HeadIcon center icon={item.icon} />
 <div className="mt-5"></div>
-      
+<ItemContent center small title={item.title} >
+                  {item.description}
+                </ItemContent>
               </div>
             ))}
           </div>

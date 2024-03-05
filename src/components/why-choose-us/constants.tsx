@@ -21,6 +21,7 @@ import {
   faNodeJs,
   faReact,
   faPython,
+  faMicrosoft
 } from "@fortawesome/free-brands-svg-icons";
 
 export const WHY_CHOOSE_TOP_ITEM = {
@@ -167,19 +168,28 @@ export const WHY_CHOOSE_BTM_ITEM = {
   items: [
     {
       icon: <FontAwesomeIcon icon={faJs} />,
-      title: "JavaScript",
+      title: "JavaScript SDKs",
+      description: " ",
     },
     {
       icon: <FontAwesomeIcon icon={faNodeJs} />,
-      title: "NodeJs",
+      title: "NodeJs SDKs",
+      description: " ",
     },
     {
-      title: "React",
+      title: "React SDK",
       icon: <FontAwesomeIcon icon={faReact} />,
+      description: " ",
     },
     {
-      title: "Python",
+      title: "Python SDKs",
       icon: <FontAwesomeIcon icon={faPython} className="text-primary-200 mr-2" />,
+      description: " ",
+    },
+    {
+      title: ".NET SDKs",
+      icon: <FontAwesomeIcon icon={faMicrosoft} className="text-primary-200 mr-2" />,
+      description: " ",
     },
   ],
 } as const;

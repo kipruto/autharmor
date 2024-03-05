@@ -63,7 +63,7 @@ export default function FaqCard(
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
           >
-            <p className="font-sans font-regular text-sm md:text-base text-gray-600 dark:text-slate-300">
+            <p className="font-sans font-regular text-sm md:text-base text-gray-600 dark:text-slate-900">
               {props.description}
             </p>
           </motion.div>
