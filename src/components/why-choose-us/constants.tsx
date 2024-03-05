@@ -177,7 +177,7 @@ export const WHY_CHOOSE_BTM_ITEM = {
       description: " ",
     },
     {
-      title: "React SDK",
+      title: "React SDKs",
       icon: <FontAwesomeIcon icon={faReact} />,
       description: " ",
     },
